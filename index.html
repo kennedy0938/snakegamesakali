@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBC Snake Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="game-title">CBC Snake Adventure</h1>
+        <h2 class = "sub-title">Developed by S.Kennedy 2025</h2>
+        <canvas id="gameCanvas" width="600" height="400"></canvas>
+        <div id="score-container" class="score-container">
+          <p class="score-text">Score: <span id="score">0</span></p>
+          <p class="item-text">Current Item: <span id="grade">Communication and Collaboration (Competencies)</span></p>
+            <p class="timer-text">Time: <span id="timer">00:00</span></p>
+        </div>
+    </div>
+      <div id="message-box" class="message-box">
+      <div class = "message-box-content">
+            <p id="message-text" class="message-text">Welcome to the game!</p>
+            <button id="close-button" class="close-button">Okay</button>
+         </div>
+    </div>
+     <audio id="background-audio" loop autoplay src="audio/background.mp3"></audio>
+        <audio id="eat-audio" src="audio/eat.mp3"></audio>
+       <audio id="fail-audio" src="audio/fail.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
