@@ -138,13 +138,7 @@ max-width: 400px;
 .close-button:hover {
   background: #2980b9;
 }
-
 .controls {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-top: 10px;
 display: none;
 }
 
@@ -199,11 +193,18 @@ display: none;
   }
 
   .controls {
-    display: flex;
-}
+      display: flex; /* Make the buttons visible on touch devices*/
+  }
  .arrow-btn {
       width: 40px;
       height: 40px;
       font-size: 1.2em;
+  }
+}
+
+/* Media query for large screens */
+@media (min-width: 601px) {
+  .controls {
+      display: none; /* Make the buttons hidden on wide screens */
   }
 }
