@@ -197,6 +197,14 @@ function game() {
 
                 handleSwipe(startX, startY, endX, endY)
            }, {passive:true});
+
+            // Event Listeners for the buttons
+        document.getElementById('up-btn').addEventListener('click', () => {if (direction !== 'down') direction = 'up';});
+        document.getElementById('down-btn').addEventListener('click', () => {if (direction !== 'up') direction = 'down';});
+        document.getElementById('left-btn').addEventListener('click', () => {if (direction !== 'right') direction = 'left';});
+        document.getElementById('right-btn').addEventListener('click', () => {if (direction !== 'left') direction = 'right';});
+
+
     }
 
    function startPlaying() {
@@ -448,13 +456,13 @@ function updateItem() {
                stageMessage = `Get Ready for Grades 4 to 6! \n\n ${learningAreas['Grade 4']}`;
                showStageMessage(stageMessage);
                currentItem = allGrades[allGrades.indexOf(currentItem) + 1];
-               food.item = currentItem;
+                food.item = currentItem;
 
         } else if (currentStage === GameStage.GRADES && currentItem === 'Grade 6'){
             stageMessage = `Get Ready for Grades 7 to 9! \n\n ${learningAreas['Grade 7']}`;
             showStageMessage(stageMessage);
              currentItem = allGrades[allGrades.indexOf(currentItem) + 1];
-            food.item = currentItem;
+              food.item = currentItem;
 
         } else if (currentStage === GameStage.GRADES && currentItem === 'KJSEA'){
                stageMessage = `Congratulations! You've completed the grades stage. Get ready to select a pathway!`;
