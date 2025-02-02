@@ -33,10 +33,10 @@ body {
   color: #2C3E50;
 }
 .sub-title {
- font-size: 1em;
- font-weight: 400;
- color: #555;
-margin-bottom: 20px;
+  font-size: 1em;
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 20px;
 }
 
 canvas {
@@ -146,22 +146,22 @@ max-width: 400px;
   gap: 10px;
   margin-top: 10px;
 display: none;
-
 }
 
 .arrow-btn {
-  font-size: 1.5em;
+ font-size: 1.5em;
   background-color: #3498db;
   color: #fff;
   border: none;
-  border-radius: 50%;
-  width: 50px;
+  border-radius: 15%;
+ width: 50px;
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  padding: 10px;
 }
 
 .arrow-btn:hover {
@@ -201,4 +201,9 @@ display: none;
   .controls {
     display: flex;
 }
+ .arrow-btn {
+      width: 40px;
+      height: 40px;
+      font-size: 1.2em;
+  }
 }
